@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiHİRLİ 8 TOPU</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="nes-container is-white with-title is-centered">
+        <p class="title">SİHİRLİ 8 TOPU</p>
+        <p id="altMetin">aklından bir soru sor ve salla!!!</p>
+        
+        <div id="ball-container">
+            <img id="magicBall" src="images/magicball.png" alt="sihirli bir top">
+        </div>
+        <button type="button" id="salla-btn" class="nes-btn is-primary">SALLA</button>
+
+        <dialog class="nes-dialog" id="answer-dialog">
+            <form method="dialog">
+                <p id="modal-answer-text"></p>
+                <menu class="dialog-menu">
+                    <button class="nes-btn is-success">bi daha dene</button>
+                </menu>
+            </form>
+        </dialog>
+        <footer>
+            <p class="nes-text is-primary">
+                sihirli top toplam <span id="sayac">0</span> kere sallandı
+            </p>
+            <p id="imzasal">- bir maceraci33 sitesidir -</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

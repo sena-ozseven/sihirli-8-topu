@@ -1,0 +1,79 @@
+body {
+    padding: 10rem;
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    
+}
+
+.nes-container {
+    max-width: 500rem;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+#ball-container {
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#magicBall {
+    width: 20rem;
+    display: block;
+}
+
+#altMetin {
+    font-size: small;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: 800;
+}
+
+#answer-dialog {
+    max-width: 400px;
+}
+
+#answer-dialog::backdrop {
+    background-color: var(--backdrop-rengi, green);
+}
+
+.shake {
+    animation: shake-animation 0.5s;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+#sayac {
+    color: red;
+    font-weight: bold;
+}
+
+#imzasal {
+    font-size: 0.5em;
+}
+
+@keyframes shake-animation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px) translateY(-10px); }
+    50% { transform: translateX(10px) translateY(10px); }
+    75% { transform: translateX(-10px) translateY(-10px); }
+    100% { transform: translateX(0); }
+}
+
+#answer-dialog .dialog-menu {
+    justify-content: center !important;
+}
